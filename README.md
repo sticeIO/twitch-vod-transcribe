@@ -1,6 +1,10 @@
 # Twitch VOD Transcriber and Searcher
 
-Two scripts to transcribe Twitch VODs and search specific terms in the generated subtitles.
+This repository contains two scripts that facilitate transcription and keyword searching in Twitch VODs.
+
+The transcribe.sh script downloads Twitch VODs, extracts the audio, and uses Vosk-Transcriber, an offline speech-to-text toolkit, to generate subtitles in both English and German.
+
+The search.py script then performs a fuzzy search on these subtitle files, looking for specific words (applying stemming/fuzzing) defined within the script.
 
 ## Quick Start
 1. Clone this repo.
